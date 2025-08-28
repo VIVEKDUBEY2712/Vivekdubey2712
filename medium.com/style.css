@@ -1,0 +1,43 @@
+.smallimage{
+    width: 500x;
+    height: 500px;
+    position: absolute;
+    top:15% ;
+    right: 0px;
+    
+}
+.human{
+    font-size: 100px;
+    font-weight: 600;
+   /* margin-top: 100px; */
+    margin-bottom: 0px;
+    padding: 30px;
+
+}
+.ideas{
+    font-size: 100px;
+    font-weight: 600;
+    margin-top:0px;
+    margin-bottom: 2px;
+    margin: 30px;
+
+}
+.a{
+  margin: 30px;
+}
+.start{
+    margin: 50px;
+    background-color:  2px black ;
+    border: black solid;
+    
+}
+.link{
+display: flex;
+gap: 15px;
+padding-left: 10px ;
+
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
