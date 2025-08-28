@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+  background: darkcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 95vw;
+ 
+}
+
+.orbitfirst { 
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border:  3px red solid;
+  width: 280px; 
+  height: 250px;
+ }
+.orbitsecond {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px orange solid;
+    width: 570px; 
+    height: 522px; 
+    }
+.sun {
+  border: yellow solid;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px ;
+  height: 100px;
+  background-color: #ffb300;
+}
+.planet1 {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+.planet2 {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+.orbit1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  animation: spin linear  infinite;
+
+  animation-duration: 12s;
+}
+.orbit1 .planet1{
+  transform: translatey(275px);  
+}
+
+.orbit2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  animation: spin  linear infinite;
+  animation-duration: 7s;
+}
+.orbit2 .planet2{
+  transform: translatey(135px);
+}
+
+
+@keyframes spin{
+  0% { 
+    transform: translate(-50%, -50%) 
+    rotate(0deg);
+ }
+  /* 10% { 
+    transform: translate(-50%, -50%) 
+    rotate(deg); */
+ /* }
+  20% { 
+    transform: translate(-50%, -50%) 
+    rotate(70deg);
+ }
+  30% { 
+    transform: translate(-50%, -50%) 
+    rotate(75deg);
+ }
+  40% { 
+    transform: translate(-50%, -50%) 
+    rotate(0deg);
+ }
+  50% { 
+    transform: translate(-50%, -50%) 
+    rotate(0deg);
+ }
+  60% { 
+    transform: translate(-50%, -50%) 
+    rotate(0deg);
+ }
+  70% { 
+    transform: translate(-50%, -50%) 
+    rotate(0deg);
+ }
+  80% { 
+    transform: translate(-50%, -50%) 
+    rotate(0deg);
+ }
+  90% { 
+    transform: translate(-50%, -50%) 
+    rotate(0deg);
+ } */
+
+  100%  {
+    transform: translate(-50%, -50%) 
+    rotate(340deg);
+ }
+}
